@@ -34,7 +34,7 @@ RUN sudo apt update && sudo apt upgrade -y \
     ros-humble-xacro 
 
 # Install Git
-RUN sudo apt install -y git
+RUN sudo apt install -y git python3-pip 
 
 # Rosdep update
 RUN rosdep update
