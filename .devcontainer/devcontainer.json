@@ -2,8 +2,7 @@
   "name": "humble desktop-full",
   "dockerFile": "Dockerfile",
   "runArgs": [
-    "--privileged",
-    "--gpus=all"
+    "--privileged"
   ],
   "workspaceMount": "source=${localWorkspaceFolder},target=/${localWorkspaceFolderBasename},type=bind",
   "workspaceFolder": "/${localWorkspaceFolderBasename}",
@@ -21,9 +20,5 @@
     "5901": {
       "label": "Desktop (VNC)"
     }
-  },
-  "containerEnv": {
-    "NVIDIA_VISIBLE_DEVICES": "all",
-    "NVIDIA_DRIVER_CAPABILITIES": "compute,utility,graphics"
   }
 }
